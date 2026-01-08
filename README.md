@@ -1,41 +1,101 @@
-# Survival_Final_Project
-This is the final Project for  the Supervised Learning Course
-# Survival-of-a-Patient
+🏥 Patient Survival Prediction Using Machine Learning
+📍 Problem Statement
 
- ## Business Problem  
- A hospital has been attempting to enhance patient care conditions by analyzing historical patient survival data. Despite their efforts to scrutinize the data, they have been unable to pinpoint the primary factors contributing to higher survival rates.
+Hospitals often rely on historical clinical data but struggle to identify the most influential factors affecting patient survival outcomes. Without reliable predictive insights, it becomes challenging to optimize treatment strategies and allocate resources effectively.
 
+🎯 Objective
 
-## The dataset
+The objective of this project is to develop a machine learning–based predictive model capable of estimating the likelihood of a patient surviving one year post-treatment. The model is designed to support clinical decision-making by highlighting key survival predictors derived from historical patient data.
 
-The dataset contains the patient records collected from a hospital. 
+📊 Data Description
 
-The "Survived_1_year" column is a target variable which has binary entries (0 or 1).
+Patient demographic information
 
-•	Survived_1_year == 0, implies that the patient did not survive after 1 year of treatment
+Medical history and clinical indicators
 
-•	Survived_1_year == 1, implies that the patient survived after 1 year of treatment
+Treatment-related variables
 
-•	D_Patient_Care_Situation: Care situation of a patient during treatment
+Target variable: One-year survival outcome
 
-•	Diagnosed_Condition: The diagnosed condition of the patient
+The dataset required extensive preprocessing to ensure reliability and consistency for modeling.
 
-•	ID_Patient: Patient identifier number
+🧠 Methodology
+Data Preparation
 
-•	Treatment_with_drugs: Class of drugs used during treatment
+Handled missing values using median and mode imputation
 
-•	Survived_1_year: If the patient survived after one year (0 means did not survive; 1 means survived)
+Removed ambiguous or non-informative responses (e.g., “Cannot say” for smoking status)
 
-•	Patient_Age: Age of the patient
+Detected and treated outliers using z-score analysis
 
-•	Patient_Body_Mass_Index: A calculated value based on the patient’s weight, height, etc.
+Model Development
 
-•	Patient_Smoker: If the patient was a smoker or not
+Multiple supervised machine learning models were trained and evaluated:
 
-•	Patient_Rural_Urban: If the patient stayed in Rural or Urban part of the country
+Logistic Regression
 
-•	Previous_Condition: Condition of the patient before the start of the treatment ( This variable is splitted into 8 columns - A, B, C, D, E, F, Z and Number_of_prev_cond. A, B, C, D, E, F and Z are the previous conditions of the patient.
+Decision Trees
 
-Objective:
-To develop a predictive model for assessing the likelihood of a patient’s survival after one year of treatment.
+Random Forest
 
+Gradient Boosting
+
+AdaBoost
+
+Support Vector Machine (SVM)
+
+Hyperparameter Optimization
+
+Applied GridSearchCV to systematically tune model hyperparameters and improve performance
+
+Evaluated models using accuracy and cross-validation metrics
+
+AutoML Benchmarking
+
+Leveraged PyCaret AutoML to benchmark manual model development against automated pipelines
+
+Ensured model robustness and validated algorithm selection efficiency
+
+📈 Key Results
+
+Gradient Boosting emerged as the best-performing model
+
+Achieved ~80% prediction accuracy on unseen data
+
+AutoML benchmarking confirmed the consistency and reliability of the selected model
+
+💡 Business & Clinical Impact
+
+This predictive model enables healthcare providers to:
+
+Identify high-risk patients earlier in the treatment process
+
+Support personalized care planning
+
+Improve resource allocation and follow-up strategies
+
+Enhance data-driven clinical decision-making
+
+The solution demonstrates how machine learning can be effectively applied to real-world healthcare challenges to improve patient outcomes.
+
+🛠 Tools & Technologies
+
+Python (Pandas, NumPy, scikit-learn)
+
+Machine Learning Models: Gradient Boosting, Random Forest, SVM
+
+AutoML: PyCaret
+
+Model Optimization: GridSearchCV
+
+Data Analysis & Visualization: Matplotlib, Seaborn
+
+📦 Deliverables
+
+End-to-end Jupyter Notebook (data preparation, modeling, evaluation)
+
+Optimized machine learning model
+
+Performance comparison across multiple algorithms
+
+7️⃣ Resume-Ready Bullet Point (Very Important)
