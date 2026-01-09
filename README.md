@@ -53,19 +53,26 @@ Joblib
 
 ## 📂 Project Structure
 patient-survival-prediction-app/
+
 │
 ├── app/
 │   └── app.py                 # Streamlit application
 │
+
+
 ├── data/
 │   └── Survival.csv           # Sample / anonymized data
 │
+
 ├── models/
 │   ├── gradient_boosting.pkl  # Trained model
 │   └── feature_names.pkl      # Feature schema
 │
+
 ├── train_model.py             # Training pipeline
+
 ├── requirements.txt
+
 └── README.md
 
 ## ⚙️ How to Run Locally
@@ -98,8 +105,8 @@ This project is for educational and demonstration purposes only
 
 ## 👤 Author
 Khalida Khaldi
+
 M.S. Data Science
+
 Focus: Machine Learning, Analytics, Deployment
-Amani Khaldi
-M.S. Data Science
-Focus: Machine Learning, Analytics, Deployment
+
