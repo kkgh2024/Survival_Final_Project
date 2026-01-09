@@ -52,28 +52,27 @@ Plotly
 Joblib
 
 ## 📂 Project Structure
-patient-survival-prediction-app/
 
+## Project Structure
+
+patient-survival-prediction-app/
 │
 ├── app/
 │   └── app.py                 # Streamlit application
 │
-
-
 ├── data/
 │   └── Survival.csv           # Sample / anonymized data
 │
-
 ├── models/
-│   ├── gradient_boosting.pkl  # Trained model
-│   └── feature_names.pkl      # Feature schema
+│   ├── gradient_boosting.pkl  # Trained Gradient Boosting model
+│   └── feature_names.pkl      # Saved feature schema for inference
 │
+├── train_model.py             # Model training & evaluation pipeline
+├── requirements.txt           # Python dependencies
+└── README.md                  # Project documentation
 
-├── train_model.py             # Training pipeline
 
-├── requirements.txt
 
-└── README.md
 
 ## ⚙️ How to Run Locally
 #### 1. Install dependencies
