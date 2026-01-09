@@ -4,12 +4,12 @@
 A machine learning–powered decision support application that predicts one-year patient survival probability based on demographic, clinical, and treatment-related factors.
 The system is designed to support healthcare analytics use cases and demonstrate a production-ready ML workflow, from training to deployment.
 
-## 🔍 Problem Statement
+##  Problem Statement
 
 Healthcare providers often struggle to identify the factors that most strongly influence patient survival after treatment.
 This project addresses that challenge by leveraging historical clinical data and machine learning to estimate survival likelihood and support data-driven decision-making.
 
-## 🚀 Solution Overview
+##  Solution Overview
 
 The solution consists of:
 
@@ -19,7 +19,7 @@ A Streamlit web application for interactive prediction and visualization
 
 A reproducible ML pipeline with saved model artifacts
 
-## 🧠 Machine Learning Approach
+##  Machine Learning Approach
 
 Model: Gradient Boosting Classifier
 
@@ -39,7 +39,7 @@ Treatment type
 
 #### Performance: ~83% accuracy after hyperparameter tuning
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 Python
 
@@ -53,7 +53,7 @@ Plotly
 
 Joblib
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 patient-survival-prediction-app/
@@ -76,7 +76,7 @@ patient-survival-prediction-app/
 
 
 
-## ⚙️ How to Run Locally
+##  How to Run Locally
 #### 1. Install dependencies
 pip install -r requirements.txt
 
@@ -86,7 +86,7 @@ python train_model.py
 #### 3. Run the app
 streamlit run app/app.py
 
-## 📊 Application Features
+##  Application Features
 
 Interactive patient data input
 
