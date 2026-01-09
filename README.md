@@ -25,6 +25,8 @@ Model: Gradient Boosting Classifier
 
 Target: One-year survival (Survived_1_year)
 
+PyCaret AutoML was used to benchmark multiple classification models and validate the manually tuned Gradient Boosting model.
+
 #### Features:
 
 Demographics (Age, BMI)
@@ -53,22 +55,23 @@ Joblib
 
 ## 📂 Project Structure
 
-
+```
 patient-survival-prediction-app/
 │
 ├── app/
-│   └── app.py                 # Streamlit application
+│ └── app.py # Streamlit application
 │
 ├── data/
-│   └── Survival.csv           # Sample / anonymized data
+│ └── Survival.csv # Sample /  data
 │
 ├── models/
-│   ├── gradient_boosting.pkl  # Trained Gradient Boosting model
-│   └── feature_names.pkl      # Saved feature schema for inference
+│ ├── gradient_boosting.pkl # Trained Gradient Boosting model
+│ └── feature_names.pkl # Saved feature schema for inference
 │
-├── train_model.py             # Model training & evaluation pipeline
-├── requirements.txt           # Python dependencies
-└── README.md                  # Project documentation
+├── train_model.py # Model training & evaluation pipeline
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation
+```
 
 
 
