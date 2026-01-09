@@ -53,7 +53,6 @@ Joblib
 
 ## 📂 Project Structure
 
-## Project Structure
 
 patient-survival-prediction-app/
 │
