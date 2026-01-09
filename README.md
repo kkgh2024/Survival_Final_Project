@@ -102,7 +102,7 @@ Model performance evaluation (ROC, confusion matrix)
 
 The model and feature schema are persisted to ensure training–inference consistency
 
-This project is for educational and demonstration purposes only
+
 
 ## 👤 Author
 Khalida Khaldi
