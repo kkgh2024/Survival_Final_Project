@@ -1,100 +1,105 @@
-# 🏥  Patient Survival Prediction Using Machine Learning
-## 📍  Problem Statement
 
-Hospitals often rely on historical clinical data but struggle to identify the most influential factors affecting patient survival outcomes. Without reliable predictive insights, it becomes challenging to optimize treatment strategies and allocate resources effectively.
+# Patient Survival Decision Support System
 
-## 🎯  Objective
+A machine learning–powered decision support application that predicts one-year patient survival probability based on demographic, clinical, and treatment-related factors.
+The system is designed to support healthcare analytics use cases and demonstrate a production-ready ML workflow, from training to deployment.
 
-The objective of this project is to develop a machine learning–based predictive model capable of estimating the likelihood of a patient surviving one year post-treatment. The model is designed to support clinical decision-making by highlighting key survival predictors derived from historical patient data.
+## 🔍 Problem Statement
 
-## 📊  Data Description
+Healthcare providers often struggle to identify the factors that most strongly influence patient survival after treatment.
+This project addresses that challenge by leveraging historical clinical data and machine learning to estimate survival likelihood and support data-driven decision-making.
 
-Patient demographic information
+## 🚀 Solution Overview
 
-Medical history and clinical indicators
+The solution consists of:
 
-Treatment-related variables
+A Gradient Boosting classification model trained on patient data
 
-Target variable: One-year survival outcome
+A Streamlit web application for interactive prediction and visualization
 
-The dataset required extensive preprocessing to ensure reliability and consistency for modeling.
+A reproducible ML pipeline with saved model artifacts
 
-## 🧠 Methodology
-### Data Preparation
+## 🧠 Machine Learning Approach
 
-Handled missing values using median and mode imputation
+Model: Gradient Boosting Classifier
 
-Removed ambiguous or non-informative responses (e.g., “Cannot say” for smoking status)
+Target: One-year survival (Survived_1_year)
 
-Detected and treated outliers using z-score analysis
+#### Features:
 
-### Model Development
+Demographics (Age, BMI)
 
-Multiple supervised machine learning models were trained and evaluated:
+Lifestyle factors (Smoking status)
 
-Logistic Regression
+Clinical history (Previous conditions, mental condition)
 
-Decision Trees
+Treatment type
 
-Random Forest
+#### Performance: ~83% accuracy after hyperparameter tuning
 
-Gradient Boosting
+## 🛠️ Tech Stack
 
-AdaBoost
+Python
 
-Support Vector Machine (SVM)
+Pandas / NumPy
 
-### Hyperparameter Optimization
+Scikit-learn
 
-Applied GridSearchCV to systematically tune model hyperparameters and improve performance
+Streamlit
 
-Evaluated models using accuracy and cross-validation metrics
+Plotly
 
-### AutoML Benchmarking
+Joblib
 
-Leveraged PyCaret AutoML to benchmark manual model development against automated pipelines
+## 📂 Project Structure
+patient-survival-prediction-app/
+│
+├── app/
+│   └── app.py                 # Streamlit application
+│
+├── data/
+│   └── Survival.csv           # Sample / anonymized data
+│
+├── models/
+│   ├── gradient_boosting.pkl  # Trained model
+│   └── feature_names.pkl      # Feature schema
+│
+├── train_model.py             # Training pipeline
+├── requirements.txt
+└── README.md
 
-Ensured model robustness and validated algorithm selection efficiency
+## ⚙️ How to Run Locally
+#### 1. Install dependencies
+pip install -r requirements.txt
 
-## 📈 Key Results
+#### 2. Train the model
+python train_model.py
 
-Gradient Boosting emerged as the best-performing model
+#### 3. Run the app
+streamlit run app/app.py
 
-Achieved ~80% prediction accuracy on unseen data
+## 📊 Application Features
 
-AutoML benchmarking confirmed the consistency and reliability of the selected model
+Interactive patient data input
 
-## 💡 Business & Clinical Impact
+Real-time survival prediction
 
-This predictive model enables healthcare providers to:
+Probability-based risk scoring
 
-Identify high-risk patients earlier in the treatment process
+Exploratory visualizations
 
-Support personalized care planning
+Model performance evaluation (ROC, confusion matrix)
 
-Improve resource allocation and follow-up strategies
+## 📌 Notes
 
-Enhance data-driven clinical decision-making
+The model and feature schema are persisted to ensure training–inference consistency
 
-The solution demonstrates how machine learning can be effectively applied to real-world healthcare challenges to improve patient outcomes.
+This project is for educational and demonstration purposes only
 
-## 🛠 Tools & Technologies
-
-Python (Pandas, NumPy, scikit-learn)
-
-Machine Learning Models: Gradient Boosting, Random Forest, SVM
-
-AutoML: PyCaret
-
-Model Optimization: GridSearchCV
-
-Data Analysis & Visualization: Matplotlib, Seaborn
-
-## 📦   Deliverables
-
-End-to-end Jupyter Notebook (data preparation, modeling, evaluation)
-
-Optimized machine learning model
-
-Performance comparison across multiple algorithms
-
+## 👤 Author
+Khalida Khaldi
+M.S. Data Science
+Focus: Machine Learning, Analytics, Deployment
+Amani Khaldi
+M.S. Data Science
+Focus: Machine Learning, Analytics, Deployment
